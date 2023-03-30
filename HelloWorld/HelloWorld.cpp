@@ -2,10 +2,22 @@
 //
 
 #include <iostream>
+int myInt = 42;
+int ptrChar = 5;
+bool myBool = true;
 
 int main()
 {
     std::cout << "Howdy!\n";
+
+    char myChar = 'a';
+    char* ptrChar;
+    ptrChar = &myChar;
+    // ptrChar = 0;
+
+    *(ptrChar + 500) = 'x';
+
+    std::cout << "\n My char value is: " << *ptrChar;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
